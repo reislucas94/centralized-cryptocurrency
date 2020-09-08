@@ -1,7 +1,6 @@
 ﻿using System;
 
-namespace CentralizedCryptocurrency.Data
-
+namespace CentralizedCryptocurrency.Infrastructure
 {
     public class Class1
     {

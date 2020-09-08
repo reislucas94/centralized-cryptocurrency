@@ -8,5 +8,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CentralizedCryptocurrency.Domain\CentralizedCryptocurrency.Domain.csproj" />
+  </ItemGroup>
+
 
 </Project>

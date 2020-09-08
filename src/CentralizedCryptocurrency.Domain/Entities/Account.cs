@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace CentralizedCryptocurrency.Core
+namespace CentralizedCryptocurrency.Domain.Entities
 {
     public class Account
     {
