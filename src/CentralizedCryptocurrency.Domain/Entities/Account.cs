@@ -5,8 +5,15 @@ namespace CentralizedCryptocurrency.Domain.Entities
 {
     public class Account
     {
-        public Guid Id { get; set; }
-        public string PublicKey { get; set; }
-        public string PrivateKey { get; set; }
+        public string Id { get; private set; }
+        public byte[] PublicKey { get; private set; }
+        public byte[] PrivateKey { get; private set; }
+
+        public Account (string id, byte[] publicKey, byte[] privateKey)
+        {
+            Id = id;
+            PublicKey = publicKey;
+            PrivateKey = privateKey;
+        }
     }
 }

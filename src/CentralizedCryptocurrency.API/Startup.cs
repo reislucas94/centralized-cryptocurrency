@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CentralizedCryptocurrency.Application;
+using CentralizedCryptocurrency.Application.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +30,8 @@ namespace CentralizedCryptocurrency.Api
             services.AddControllers();
 
             services.AddSwaggerGen();
+
+            services.AddScoped<IAccountAppService, AccountAppService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

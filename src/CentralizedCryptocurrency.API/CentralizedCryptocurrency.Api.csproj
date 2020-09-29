@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CentralizedCryptocurrency.Application\CentralizedCryptocurrency.Application.csproj" />
     <ProjectReference Include="..\CentralizedCryptocurrency.Domain\CentralizedCryptocurrency.Domain.csproj" />
   </ItemGroup>
 
